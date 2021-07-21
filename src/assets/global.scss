@@ -1,0 +1,84 @@
+.d-mobile {
+  @media only screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+.d-desktop {
+  display: none;
+
+  @media only screen and (min-width: 992px) {
+    display: block;
+  }
+}
+
+.text-quote--small {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.text-quote--medium {
+  font-size: 26px;
+  font-weight: bold;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.text-quote--large {
+  font-size: 33px;
+  font-weight: bold;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.fwd-two-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 48px;
+  }
+
+  .btn {
+    max-width: 90%;
+    margin: 0 0 20px 0;
+
+    @media only screen and (min-width: 576px) {
+      max-width: 70%;
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 200px;
+      margin: 0 20px 0 0;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .btn-primary {
+    color: #ffffff;
+  }
+
+  &--large {
+    &.fwd-two-btn {
+      .btn {
+        @media only screen and (min-width: 768px) {
+          width: 335px;
+        }
+      }
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}

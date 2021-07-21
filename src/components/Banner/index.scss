@@ -1,0 +1,20 @@
+.banner {
+  background-color: #f65e1a;
+  color           : #ffffff;
+  padding-top     : 64px;
+
+  &__heading {
+    font-size: 24px;
+    font-weight: bold;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 60px;
+    }
+  }
+
+  &__img {
+    width : 100%;
+    height: auto;
+    display: block;
+  }
+}
